@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+}
+
+.knapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+
+}
+
+
+
+
+.row1, .row2, .row3, .row4 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+#knapp1 button,
+#knapp2 button,
+#knapp3 button,
+#knapp4 button,
+#knapp5 button,
+#knapp6 button,
+#knapp7 button,
+#knapp8 button,
+#knapp9 button,
+#knappMinus button,
+#knappPluss button,
+#knappGang button,
+#knappDel button {
+    margin: 1px;
+    width: 50px;
+    height: 50px;
+}
+
+#knappLik button,
+#knappReset button {
+    margin: 1px;
+    width: 75px;
+    height: 50px;
+}
+
+
