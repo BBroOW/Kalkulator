@@ -11,25 +11,25 @@
 
             <div class="row-container">
                 
-                <input type="text" id="textInput" readonly>
-                    <p id="displayArea"></p>
+                <input type="text" id="textInput" placeholder="0">
+                    <p id="displayArea"></p> 
 
                 <div class="row1">
 
                     <div id="knapp1">
-                        <button type="button">1</button>
+                        <button type="button" onclick="knapp('1')">1</button>
                     </div>
     
                     <div id="knapp2">
-                        <button type="button">2</button>
+                        <button type="button" onclick="knapp('2')">2</button>
                     </div>
                     
                     <div id="knapp3">
-                        <button type="button">3</button>
+                        <button type="button" onclick="knapp('3')">3</button>
                     </div>
     
                     <div id="knappPluss">
-                        <button type="button">+</button>
+                        <button type="button" onclick="symbol('+')">+</button>
                     </div>
     
                 </div>
@@ -37,19 +37,19 @@
                 <div class="row2">
     
                     <div id="knapp4">
-                        <button type="button">4</button>
+                        <button type="button" onclick="knapp('4')">4</button>
                     </div>
     
                     <div id="knapp5">
-                        <button type="button">5</button>
+                        <button type="button" onclick="knapp('5')">5</button>
                     </div>
                     
                     <div id="knapp6">
-                        <button type="button">6</button>
+                        <button type="button" onclick="knapp('6')">6</button>
                     </div>
     
                     <div id="knappMinus">
-                        <button type="button">-</button>
+                        <button type="button" onclick="symbol('-')">-</button>
                     </div>
     
                 </div>
@@ -57,34 +57,34 @@
                 <div class="row3">
     
                     <div id="knapp7">
-                        <button type="button">7</button>
+                        <button type="button" onclick="knapp('7')">7</button>
                     </div>
     
                     <div id="knapp8">
-                        <button type="button">8</button>
+                        <button type="button" onclick="knapp('8')">8</button>
                     </div>
                     
                     <div id="knapp9">
-                        <button type="button">9</button>
+                        <button type="button" onclick="knapp('9')">9</button>
                     </div>
     
                     <div id="knappGang">
-                        <button type="button">*</button>
+                        <button type="button" onclick="symbol('*')">*</button>
                     </div>
                 </div>    
                 
                 <div class="row4">
 
                     <div id="knappLik">
-                        <button type="button">=</button>
+                        <button type="button" onclick="results()">=</button>
                     </div>
     
                     <div id="knappReset">
-                        <button type="button">Nullstill</button>
+                        <button type="button" onclick="reset()">Nullstill</button>
                     </div>
                     
                     <div id="knappDel">
-                        <button type="button">:</button>
+                        <button type="button" onclick="symbol('/')">/</button>
                     </div>
     
                 </div>
