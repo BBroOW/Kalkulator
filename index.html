@@ -92,6 +92,18 @@
             </div>
         </div>
 
+        <ul id="liste"></ul>
+        
     <script src="index.js"></script>
+    <script>
+        log.map((
+            logi
+        ) =>{
+            const el = document.createElement("li")
+            el.innerText = logi.result
+
+            document.getElementById("liste").appendChild(el)
+        })
+    </script>
 </body>
 </html>

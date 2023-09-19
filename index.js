@@ -1,4 +1,5 @@
 let nummer = ""
+let log = []
 
 
 function knapp(num){
@@ -15,12 +16,19 @@ function symbol(symbol){
 function results(){
     document.getElementById("textInput").value = eval(nummer)
     document.getElementById("textInput").placeholder = "0"
+    log.push(
+        {
+            result:eval(nummer), tid:new Date(), nummer
+        }
+    )
+    console.log(log)
 }
 
 
 
 function reset(){
     document.getElementById("textInput").value = ""
+    document.getElementById("textInput").placeholder = "0"
     nummer = ""
 }
 
