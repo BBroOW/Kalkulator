@@ -1,6 +1,21 @@
 let nummer = ""
 let log = []
 
+function viewLog(){
+
+    document.getElementById("liste").innerHTML = ""
+        log.map((
+            logi
+        ) =>{
+            const el = document.createElement("li")
+            el.style.textAlign = "center"
+            el.innerText = logi.nummer + "=" + logi.result
+
+            document.getElementById("liste").appendChild(el)
+        })
+
+}
+    
 
 function knapp(num){
     document.getElementById("textInput").value += num
@@ -21,6 +36,7 @@ function results(){
             result:eval(nummer), tid:new Date(), nummer
         }
     )
+    viewLog()
     console.log(log)
 }
 
@@ -34,3 +50,4 @@ function reset(){
 
 
 
+console.log(log)
